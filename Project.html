@@ -1,0 +1,189 @@
+<link href='https://fonts.googleapis.com/css?family=Tinos:400,700|Open+Sans+Condensed:700,300|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<body background="old_map.png">
+
+<style>
+#section {
+	font-family: 'Open+Sans+Condensed', serif;
+    font-size: 24px;
+    margin-left: 128px;
+    margin-right: 128px;
+}
+#footer {
+	background-color:black;
+	color:white;
+	clear:both;
+	text-align:center;
+	padding: 5px;
+}
+h1 {
+    font-size: 64px;
+    margin-left: 38px;
+    font-family: 'Tinos', sans-serif;
+}
+h2 {
+	font-size: 34px;
+    margin-left: 40px;
+    font-family: 'Tinos', sans-serif;
+}
+a:link {color:black; background-color:transparent; text-decoration:underline}
+a:visited {color:black; background-color:transparent; text-decoration:underline}
+a:hover {color:red; background-color:transparent; text-decoration:underline}
+a:active {color:red; background-color:transparent; text-decoration:underline}
+</style>
+
+<body>
+
+<div id="section">
+    <h1 style="text-align:center;">The Spread of Infectious Disease in 19th Century Canada</h1>
+    <center><img src="M992X.5.82.jpg" style="width:804px;height:728px;"></center>
+    <h2 style="text-align:center;">Purpose and Scope of this Project</h2>
+    <p>As a student of history at Carleton University, my area of interest is in Canadian urban and social history. During my studies 
+    I have bacome particularly interested in 19th century Canada and the effects of industrialization and urbanization. While I have 
+    had great success in my studies thus far, these successes have been within the traditional methods of the discipline; research and 
+    essay writing. As such, this is my very first attempt at a digital history project, and is intended only to be an exploration of the ways in which 
+    the methods and tools used by digital historians could be applied to the subject matter of a more traditional history project. In 
+    other words, my purpose is to explore the ways in which these methods could supplement, or add an extra layer to, traditional 
+    projects I have done in the past dealing with this subject matter. The benefit here is that the data collected and the visualizations created 
+    in this project would be extremely time consuming, if not impossible, in the traditional method; and, not to mention, terribly 
+    impractical.</p>
+    <p>Being that this is my first attempt at creating such a project, I feel that it is very important to state from the outset that 
+    the scope of this project is very limited and, as stated above, experimental. The datasets I am working with are very limited in that 
+    they have been collected from only one source, the <a href="http://search.canadiana.ca/" target="_blank">Canadiana Discovery Portal.</a></p>
+    <h2 style="text-align:center;">Introduction</h2>
+    <p>Throughout the 19th century, the growth of industry in Canadian cities saw an increase in the urbanization of the 
+    population. During this period the percentage of the population moving to reside within major Canadian cities such 
+    as Montreal and Toronto significantly outpaced the development of infrastructure (see: Bettina Bradbury, "Pigs, Cows and Boarders: 
+    Non-Wage Forms of Survival among Montreal Families, 1861-91," <i> Labour/Le Travail,</i> 14, 1998). This lack of infrastructure, 
+    particularly 
+    sanitary infrastructure, was the leading cause of the spread of infectious disease and resulted in increased mortality rates, 
+    particularly among the young and old, and most prominently in poorer, working-class communities (see: Patricia Thronton and Sherry 
+    Olson, "Infant Mortality in Three Cultural Settings in Montreal, 1880." <i> Infant and Child Mortality in the Past,</i> 1997; and: 
+    Francois Pelletier, Jacques Legare, and Robert Bourbeau, "Mortality in Quebec during the Nineteenth Century: From the State to the 
+    Cities," <i>Population Studies,</i>) 50, 1, 1997).</p>
+    <h2 style="text-align:center;">Method</h2>
+    <p>In this project I will focus on two of arguably the most problematic infectious diseases to plague Canadian cities during the 
+    19th century: <a href="https://en.wikipedia.org/wiki/Cholera" target="_blank">cholera</a> and <a href="https://en.wikipedia.org/wiki/Smallpox" target="_blank">smallpox</a>. In order to track the rise and fall of the severity of the epidemics caused by these 
+    diseases, I have assembled datasets from the online archive of the <a href="http://search.canadiana.ca/" target="_blank">Canadiana Discovery Portal.</a>
+    </p>
+    <p>To build these datasets I have used an API to extract all documents available in the archive that contain hits on the keywords "cholera" and "smallpox." 
+    By considering the dates and cities that the materials collected were published in, I was able to create .csv files from which to 
+    create various visualizations which I can then use to analyze this data.</p>
+    <h2 style="text-align:center;">Taking a Broad Look at Infectious Disease Across Canada During the 19th Century</h2>
+    <p>The first interesting way in which I found to visually analyze the data I collected was to consider the frequency with which 
+    documents published containing my keywords appear in the digital archive according to date. I have seperated the data into two sets,
+    one for cholera, and one for smallpox. Using bar graphs created with Excel, these were the results:</p>
+    <center><img src="Cholerabydate2.png";></center>
+    <p>In the above graph concerning cholera, we see a peak in the amount of documents published that mention cholera in 1866. 
+    This result is interesting when considering the sheer number of secondary material published concerning the cholera epidemics 
+    in Upper and Lower Canada between <a href="http://www.cbc.ca/history/EPISCONTENTSE1EP7CH1PA5LE.html" target="_blank">1832</a> and 1866 (see: C. M. Godfrey, "The Cholera Epidemics in Upper Canada 1832-1866, 1968). I found this to be particularly interesting 
+    considering the fact that my dataset is so limited in its scope, and yet, seems to produce rather accurate results.</p>
+    <center><img src="SmallpoxDates.png";></center>
+    <p>In this bar graph we see the reults for smallpox, with the peek years of the epidemic occurring in 1875 and 1876. What is interesting 
+    about this result is that this is at a time when there is a serious debate happening in Montreal concerning the idea of compulsory vaccination. 
+    What is even more interesting about this is the fact that the controversy surrounding compulsory vaccination during the ten years between 
+    1875 and 1885 in Montreal actually culminated in a riot that was reported on as far away as <a href="http://query.nytimes.com/mem/archive-free/pdf?_r=1&res=9502E2DE1E39E533A2575AC2A96F9C94649FD7CF" target="_blank">New York</a>.</p>
+    <p>The next step in analyzing this data in a very broad, national context, is to look at the number of documents published containing my 
+    keywords according to city. To do this I have used .csv files to create bar graphs like the ones above, as well as using one of the 
+    visualization tools available through <a href="http://raw.densitydesign.org/" target="_blank">RAW</a> called an "Aluvial" vector graph.</p>
+    <center><img src="AluvialCholera2.png";></center>
+    <p>Here we see that Montreal suffers terribly compared to all other Canadian cities according to the number of publications in the archive. What is also interesting here is that we can 
+    see the same major spike in 1866 that we saw in the bar graph above. This vector graph also reflects how
+     the spread of cholera to smaller cities like Ottawa happens much later within the timeframe in question. This graph also indicates what one would expect, 
+     which is the fact that major port cities like Montreal, Toronto, and Quebec, with large urban populations, are hit the hardest.</p>
+     <center><img src="Aluvial3.png";></center>
+     <p>In the above graph concerning smallpox, we can see that, according to the material drawn from the archive, it differs significantly from 
+     cholera in that it is far more widespread. We can also see that the smaller city of Ottawa has a larger number of publications in the archive 
+     concerning the disease than the larger port city of Quebec. While this result is both interesting and unexpected, it must be kept 
+     in mind that this could simply be due to the limits of the collection of the digital archive, and is not necessarily representative of actual fact.</p>
+     <h2 style="text-align:center;">Taking a Closer Look at Infectious Disease in Canada's Major Urban Cities of the Nineteenth Century: Montreal and Toronto</h2>
+     <p>While the above Aluvial graphs give some indication as to the spread of infectious disease per city over time, reading the data in this 
+     way from these graphs can be difficult, as the dates are arranged in a rather random order (even though the spreadsheets that these graphs 
+     are drawing data from have been organized in ascending order by date). In order to take a closer look at change over time, I have made .csv 
+     files contaning data for both Toronto and Montreal from which to construct some frequency charts that give a much clearer visualization.</p>
+     <center><img src="Toronto-Cholera.png";></center><br>
+     <center><img src="Montreal-Cholera.png";></center>
+     <p>These bar graphs give a much more clear visualization of the fluctations in the number of publications present in the archive concerning 
+     cholera by date and city than the above Aluvial graph. As was obvious in the Aluvial graphs above, we see that, according to the archive, cholera 
+     was a much bigger issue in Montreal than Toronto, with a broader range of dates and fluctuations.</p>
+     <center><img src="Toronto-Smallpox2.png";></center><br>
+     <center><img src="Montreal-Smallpox.png";></center>
+     <p>As was the case with the Aluvial graph concerning smallpox, the above bar graphs reflect the more widespread nature of smallpox 
+     compared to cholera. Again, these bar graphs serve to provide a much clearer visualization of the fluctuations in the amount of published 
+     materials in the archive by date. What we also see in the bar graph for Montreal is the large fluctuations in the amount of material published 
+     during the decade of the compulsory vaccination debate between 1875 and 1885, with a significant spike in 1885, the year of the riots.</p>
+     <h2 style="text-align:center;">Taking a Broad Survey of the Content of the Published Material</h2>
+     <p>While I have found that analyzing the data collected from the digital archive by date and city to be an interesting way to approach my 
+     topic, there is still the matter of all of the content within the published documents collected. To read through all of this content in order 
+     to get a sense of what was being written concerning cholera and smallpox would take an extraordinary amount of time.
+     But, by using an open source piece of software called <a href="https://www.overviewdocs.com/" target="_blank">Overview</a> we can get a very 
+     broad sense of the subject matter rather quickly.</p>
+     <center><img src="Frequency-Highlighted-Cholera.png";></center>
+     <p>In the above Word Cloud graphic generated by Overview, we get a general idea of what words are occurring most frequently in 
+     the publications collected from the archive concerning cholera. For example, we can see that water is mentioned quite frequently. 
+     This is exactly what one would hope to see, as cholera has the attribute of being most widely transmitted by <a href="http://www.who.int/water_sanitation_health/diseases/cholera/en/" target="_blank">contaminated water</a> 
+     supplies. What is also represented here are the <span style="color:red;">symptoms</span> of cholera which is an infection of the 
+     <span style="color:red;">intestine</span> that, as the graphic indicates, causes <span style="color:red;">pain, fever</span> and <span style="color:red;">vomiting</span>. 
+     Also important to note is the relative frequency of the appearance of the word "<span style="color:green;">epidemic</span>," which points 
+     to the widespread nature of the disease, particularly, as mentioned above, between 1832 and 1866.</p>
+     <center><img src="Frequency-Highlighted-Smallpox.png";></center>
+     <p>In the same Word Cloud graphic generated for the materials published concerning smallpox, we again get a fairly accurate view, according to what would be expected,  
+     of what topics most frequently accompany literature dealing with this disease. As expected, the frequency of the appearance of the words 
+     "<span style="color:red;">Montreal</span>" and "<span style="color:red;">deaths</span>" is reflected here and is representative of 
+     the high mortality rates in Montreal caused by the epidemic. This could also be understood to reflect what has been indicated by the above 
+     graphs, which is the fact that Montreal is the city most heavily afflicted. Also, 
+     as expected, <span style="color:green;">vaccination</span> 
+     and any associated terms appear quite frequently.</p>
+     <p>The ferquency of the presence of the words "<span style="color:green;">lymph</span>" 
+     and "<span style="color:green;">cow</span>" may be a bit of a surprise to those unfamiliar with the particualrs of the compulsory vaccination debate in mid-nineteenth century Montreal. 
+     Certainly, it was an unexpected and welcome surprise for me. This is because smallpox vaccines in the 19th century were made from 
+     the secretions of <span style="color:gree;">cow lymph</span> of animals infected with cow pox (<a href="http://www.impfkritik.de/upload/pdf/fachinfo/dryvax.pdf" target="_blank">and apparently, to some extent, still is</a>). 
+     Where this fits into the compulsory vaccination debate is in the fact that, in 19th century vaccines, the quality of the vaccine was very important 
+     in terms of its effectiveness. Citizens of lower class often had to be vaccinated at cheap clinics that often operated much 
+     like high-volume production lines when vaccination became mandatory in Montreal, where the quality of the vaccine would be questionable. Compare this to methods of vaccination within the upper classes, 
+     who would visit their own, trusted, family physicians. The outbreak of the compuslory vaccination riots in Montreal in 1885 can be 
+     attributed to this as well as the fact that not being vaccinated made one subject to fines and would often cost working-class people their jobs, 
+     as employers perceived those who had not been vaccinated as being at high risk of infecting those around them (for more details 
+     on this see: <a href="http://webapp.mcis.utoronto.ca/resources/MCIS_Working_Papers/January_2006_CPHS_working_paper.pdf#page=92" target="_blank">Jennifer E. Keelan, <i>Biopolitics and the Body Politic: Anti-Vaccinationism in Canada from a Historical Perspective</i>, Comparative Program on Health and Society: University of Toronto, 2006</a>).</p>
+     <h2 style="text-align:center;">Conclusion</h2>
+     <p>While this project was meant to be one of an experimental and exploratory nature, I feel as though it was a success in its 
+     ultimate goal of being a means to supplement more traditional research on a more traditional historical topic.</p>
+     <p>Using some of the basic tools and methods applied by digital historians to collect and visually analyze large sets of data, 
+     this project was far more successful in accurately reflecting the scope and content of published materials concerning infectious disease in 
+     19th century Canada than I had expected. That is, by collecting, formatting, and graphing the publications available through the Canadiana 
+     Discovery Portal's online archive, I have been able to get a sense of the spread and severity of the cholera and smallpox epidemics on 
+     a scale that would be extremely time-consuming if not impossible by using traditional methods.</p>
+     <p>What is most surprising to me through this experimental digital history project is the general level of accuracy achieved through 
+     the collection and visualization of this data according to my own traditional research. While being concerned that collecting data 
+     from only one online archive might not produce the expected results, the final product was quite the opposite. Graphing the occurence of the 
+     available publications by date and city produced an accurate picture of the time periods when the respective edpidemics were at their peak, 
+     while also accurately presenting which Canadian cities suffered the most.</p>
+     <p>Topic modeling the content of the available publications with Overview has also produced suprisingly accurate results. Such issues as 
+     the symptoms of cholera and the issue of its spread through contaminated water were clearly present in the Word Cloud graphics. Similarly, 
+     the debate surrounding compulsory smallpox vaccination and mortality rates in 19th century Montreal were also effectively represented in 
+     the topic model, which also alluded to some of the more complex issues that led to the 1885 riots.</p>
+     <p>Overall, this exploratory experiment in the methods of digital history has
+     served to broaden the methods whith which I will conduct historical research in future projects, with the ultimate result being 
+     the ability to incoporate the tools and techniques used here to add an extra layer of vigour to future projects.</p>
+     <h2 style="text-align:center;">Resources</h2>
+     <p style="text-align:center;"><b>The datasets I compiled and worked with can be found below:</b></p>
+     <p style="text-align:center;">Complete <a href="https://raw.githubusercontent.com/wadepapineau/FinalProject/Datasets/output-cholera.txt" target="_blank">cholera dataset</a></p>
+     <p style="text-align:center;">Complete <a href="https://raw.githubusercontent.com/wadepapineau/FinalProject/Datasets/output-smallpox.txt" target="_blank">smallpox dataset</a></p>
+     <p style="text-align:center;">Cholera CSV files containing <a href="https://github.com/wadepapineau/FinalProject/blob/Datasets/Cholera1.csv" target="_blank">cities and dates</a></p>
+     <p style="text-align:center;">Smallpox CSV files containing <a href="https://github.com/wadepapineau/FinalProject/blob/Datasets/Smallpox1.csv" target="_blank">cities and dates</a></p>
+     <p style="text-align:center;">Or download them directly form my <a href="https://github.com/wadepapineau/FinalProject/tree/Datasets" target="_blank">Github repo</a></p>
+     <p style="text-align:center;"><b>The online archive:</b></p>
+     <p style="text-align:center;"><a href="http://search.canadiana.ca/" target="_blank">Canadiana Discovery Portal.</a></p>
+     <p style="text-align:center;"><b>Visualization and other tools:</b></p>
+     <p style="text-align:center;"><a href="https://www.overviewdocs.com/" target="_blank">Overview</a></p>
+     <p style="text-align:center;"><a href="http://raw.densitydesign.org/" target="_blank">RAW</a></p>
+     <p style="text-align:center;"><a href="http://openrefine.org/" target="_blank">OpenRefine</a></p>
+     <p style="text-align:center;"><b>19th century Montreal newspaper collection:</b></p>
+     <p style="text-align:center;"><a href="http://collections.banq.qc.ca/ark:/52327/1788714#" target="_blank">BANQ: The Daily Witness</a></p>
+</div>
+
+<div id="footer">
+By Wade Papineau
+</div>
+
+</body>
+
